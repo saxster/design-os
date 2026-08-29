@@ -1,9 +1,8 @@
 name: Close stale threads
 
 on:
-  schedule:
-    - cron: "0 9 * * *" # daily at 09:00 UTC
-
+  push:
+    branches: [main]
 permissions:
   issues: write
 
