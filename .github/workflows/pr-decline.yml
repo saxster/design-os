@@ -1,9 +1,8 @@
 name: PR manual decline (label or button)
 
 on:
-  pull_request_target:
-    types: [labeled]
-
+  push:
+    branches: [main]
   workflow_dispatch:
     inputs:
       pr_number:
